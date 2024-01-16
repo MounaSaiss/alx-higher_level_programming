@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-for x in range(0, 10):
-    for y in range(x + 1, 10):
-        if x != 8 or y != 9:
-            print("{}{}, ".format(x, y), end="")
-else:
-    print("{}{}".format(x - 1, y))
+for i in range(0, 9):
+    for j in range(i + 1, 10):
+        if i == 8:
+            print("{}{}".format(i, j))
+        else:
+            print("{}{}".format(i, j), end=", ")
